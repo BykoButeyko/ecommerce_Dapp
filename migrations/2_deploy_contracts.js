@@ -1,7 +1,7 @@
 const Dai = artifacts.require('Dai.sol');
 const PaymentProcessor = artifacts.require('PaymentProcessor.sol')
 
-module.exports = async function (deployer, network, address) {
+module.exports = async function (deployer, network, addresses) {
   const [admin, payer, _] = addresses;
 
   if (network === 'develop') {
